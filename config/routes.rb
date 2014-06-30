@@ -15,6 +15,7 @@ MtgBattle::Application.routes.draw do
   #   resources :products
    namespace :api do
     namespace :v1 do
+      resources :battle
       resource :search do
         member do
           get 'cards'
